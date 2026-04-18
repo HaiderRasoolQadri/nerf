@@ -1,6 +1,6 @@
 ## Reproduction Notice
 This fork contains TF2 compatibility fixes and reproduction 
-results for FAST-NUCES DS/AI Assignment 2.
+results.
 See [REPRODUCTION.md](REPRODUCTION.md) for full details.
 **Results:** Lego PSNR 32.11 dB | Fern PSNR 24.40 dB
 
