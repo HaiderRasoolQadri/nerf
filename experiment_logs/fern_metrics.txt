@@ -1,0 +1,16 @@
+FERN SCENE - REPRODUCTION RESULTS
+Environment: Google Colab, Tesla T4 GPU, TensorFlow 2.19
+Pre-trained weights: logs/fern_example/model_200000.npy (official)
+Date: April 2026
+==================================================
+Frame 00 | GT:image000.png | PSNR:23.34 | SSIM:0.7906 | LPIPS:0.1084
+Frame 01 | GT:image008.png | PSNR:24.45 | SSIM:0.8033 | LPIPS:0.0887
+Frame 02 | GT:image016.png | PSNR:25.41 | SSIM:0.8287 | LPIPS:0.0992
+==================================================
+MEAN PSNR  : 24.40 dB  (Paper reported: 25.17 dB)
+MEAN SSIM  : 0.8076    (Paper reported: 0.792)
+MEAN LPIPS : 0.0987    (Paper reported: 0.280)
+==================================================
+Dataset: Real Forward-Facing (handheld cellphone capture)
+Test split: llffhold=8, every 8th image held out (3 test frames from 20 total)
+Factor: 8x downsampling applied
