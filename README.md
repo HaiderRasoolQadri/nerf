@@ -1,3 +1,11 @@
+## Reproduction Notice
+This fork contains TF2 compatibility fixes and reproduction 
+results for FAST-NUCES DS/AI Assignment 2.
+See [REPRODUCTION.md](REPRODUCTION.md) for full details.
+**Results:** Lego PSNR 32.11 dB | Fern PSNR 24.40 dB
+
+---
+
 # NeRF: Neural Radiance Fields
 ### [Project Page](http://matthewtancik.com/nerf) | [Video](https://youtu.be/JuH79E8rdKc) | [Paper](https://arxiv.org/abs/2003.08934) | [Data](https://drive.google.com/drive/folders/1cK3UDIJqKAAm7zyrxRYVFJ0BRMgrwhh4)
 [![Open Tiny-NeRF in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bmild/nerf/blob/master/tiny_nerf.ipynb)<br>
