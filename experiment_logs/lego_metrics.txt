@@ -1,0 +1,38 @@
+LEGO SCENE - REPRODUCTION RESULTS
+Environment: Google Colab, Tesla T4 GPU, TensorFlow 2.19
+Pre-trained weights: logs/lego_example/model_200000.npy (official)
+Date: April 2026
+==================================================
+Frame 00 | GT:r_0   | PSNR:33.42 | SSIM:0.9714 | LPIPS:0.0153
+Frame 01 | GT:r_8   | PSNR:29.05 | SSIM:0.9606 | LPIPS:0.0223
+Frame 02 | GT:r_16  | PSNR:34.00 | SSIM:0.9746 | LPIPS:0.0128
+Frame 03 | GT:r_24  | PSNR:33.38 | SSIM:0.9725 | LPIPS:0.0173
+Frame 04 | GT:r_32  | PSNR:31.62 | SSIM:0.9660 | LPIPS:0.0190
+Frame 05 | GT:r_40  | PSNR:33.51 | SSIM:0.9681 | LPIPS:0.0167
+Frame 06 | GT:r_48  | PSNR:31.82 | SSIM:0.9629 | LPIPS:0.0261
+Frame 07 | GT:r_56  | PSNR:33.72 | SSIM:0.9657 | LPIPS:0.0160
+Frame 08 | GT:r_64  | PSNR:33.26 | SSIM:0.9723 | LPIPS:0.0147
+Frame 09 | GT:r_72  | PSNR:30.30 | SSIM:0.9701 | LPIPS:0.0209
+Frame 10 | GT:r_80  | PSNR:28.51 | SSIM:0.9570 | LPIPS:0.0292
+Frame 11 | GT:r_88  | PSNR:30.05 | SSIM:0.9597 | LPIPS:0.0228
+Frame 12 | GT:r_96  | PSNR:31.84 | SSIM:0.9678 | LPIPS:0.0176
+Frame 13 | GT:r_104 | PSNR:31.79 | SSIM:0.9650 | LPIPS:0.0192
+Frame 14 | GT:r_112 | PSNR:33.12 | SSIM:0.9676 | LPIPS:0.0150
+Frame 15 | GT:r_120 | PSNR:32.18 | SSIM:0.9690 | LPIPS:0.0205
+Frame 16 | GT:r_128 | PSNR:31.96 | SSIM:0.9763 | LPIPS:0.0184
+Frame 17 | GT:r_136 | PSNR:32.15 | SSIM:0.9675 | LPIPS:0.0224
+Frame 18 | GT:r_144 | PSNR:32.00 | SSIM:0.9650 | LPIPS:0.0176
+Frame 19 | GT:r_152 | PSNR:32.60 | SSIM:0.9606 | LPIPS:0.0179
+Frame 20 | GT:r_160 | PSNR:34.56 | SSIM:0.9687 | LPIPS:0.0203
+Frame 21 | GT:r_168 | PSNR:32.56 | SSIM:0.9692 | LPIPS:0.0131
+Frame 22 | GT:r_176 | PSNR:31.46 | SSIM:0.9655 | LPIPS:0.0194
+Frame 23 | GT:r_184 | PSNR:31.59 | SSIM:0.9647 | LPIPS:0.0156
+Frame 24 | GT:r_192 | PSNR:32.23 | SSIM:0.9659 | LPIPS:0.0147
+==================================================
+MEAN PSNR  : 32.11 dB  (Paper reported: 32.54 dB)
+MEAN SSIM  : 0.9669    (Paper reported: 0.961)
+MEAN LPIPS : 0.0186    (Paper reported: 0.050)
+==================================================
+NOTE: LPIPS computed using AlexNet backbone.
+Paper used VGG backbone which produces higher LPIPS scores.
+GT images sampled every 8th frame from test split (r_0, r_8, r_16...).
